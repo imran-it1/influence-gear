@@ -140,6 +140,27 @@ header {
     width: 100%;
 }
 
+/* Main Section Style */
+
+main {
+    width: 80vw;
+    margin: auto;
+}
+
+/* Sponsor Style */
+.sponsor {
+    margin-bottom: 100px;
+}
+
+
+
+.sponsor-logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 50px;
+}
+
 
 
 
@@ -155,6 +176,10 @@ header {
 
 /* For Mobile or Small device */
 @media screen and (max-width:576px) {
+
+
+    /* Nav And Banner */
+
     .nav-container {
         flex-direction: column;
         gap: 20px;
@@ -191,6 +216,25 @@ header {
     .banner-description {
         font-style: var(--fs-Xsmall);
     }
+
+
+    /* Sponsor Section */
+
+    .sponsor {
+        margin-top: 50px;
+    }
+
+    .sponsor-logo-container {
+        flex-wrap: wrap;
+        gap: 35px;
+        padding: 10px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
 }
 
 
@@ -216,5 +260,15 @@ header {
     .banner-container {
         background-size: 300px;
         background-position: top bottom;
+    }
+
+
+
+    .sponsor-logo-container {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 0px;
+        justify-content: center;
+        align-items: center;
     }
 }
