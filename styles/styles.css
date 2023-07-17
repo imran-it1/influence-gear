@@ -61,7 +61,6 @@ body {
 /* header style */
 
 header {
-    border: 2px solid red;
     height: 100vh;
 }
 
@@ -139,4 +138,83 @@ header {
 
 .banner-img img {
     width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Quary */
+
+
+/* For Mobile or Small device */
+@media screen and (max-width:576px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .nav-container>a {
+        text-align: center;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        background-size: 100%;
+        background-position: 0% 0%;
+        padding-top: 50px;
+    }
+
+    .banner-content {
+        text-align: center;
+        align-items: center;
+        flex-basis: 50%;
+    }
+
+    .banner-heading {
+        font-size: var(--fs-large);
+
+    }
+
+    .banner-description {
+        font-style: var(--fs-Xsmall);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Medium or Tablet device */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+
+    .banner-container {
+        background-size: 300px;
+        background-position: top bottom;
+    }
 }
