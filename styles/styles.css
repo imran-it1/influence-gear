@@ -254,7 +254,7 @@ main {
 }
 
 .product-content {
-    max-width: 50%;
+    max-width: 55%;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -356,6 +356,20 @@ main {
         justify-content: center;
     }
 
+
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-content {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .collection {
+        margin-bottom: 100px;
+    }
 }
 
 
@@ -400,5 +414,19 @@ main {
 
     .see-more {
         justify-content: center;
+    }
+
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-content {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .collection {
+        margin-bottom: 100px;
     }
 }
