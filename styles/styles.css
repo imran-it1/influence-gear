@@ -1,0 +1,48 @@
+/* Poppins Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* Universal Style */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Style */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Root */
+
+:root {
+
+    /* Color */
+    --primary-color: #E02C6D;
+    --secondary-color: #0A0826;
+    --accent-color: #FB8200;
+
+
+
+    /* Font size */
+
+    --fs-Xlarge: 3.25rem;
+    --fs-large: 1.75rem;
+    --fs-medium: 1.5rem;
+    --fs-small: 1rem;
+    --fs-Xsmall: 0.875rem;
+
+    /* Font weight */
+
+    --fw-Xlarge: 700;
+    --fw-large: 600;
+    --fw-medium: 500;
+    --fw-small: 400;
+
+
+
+
+}
