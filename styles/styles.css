@@ -189,7 +189,7 @@ main {
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-
+    cursor: pointer;
 }
 
 .collection-card img {
@@ -235,6 +235,15 @@ main {
     font-weight: var(--fw-Xlarge);
 }
 
+.see-more {
+    color: #E02C6D;
+    font-size: var(--fs-small);
+    font-weight: var(--fw-Xlarge);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
 
 
 
@@ -290,6 +299,7 @@ main {
 
     .sponsor {
         margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .sponsor-logo-container {
@@ -300,8 +310,15 @@ main {
         align-items: center;
     }
 
+    /* Popular Collection */
 
+    .collection-grid-container {
+        grid-template-columns: 1fr;
+    }
 
+    .see-more {
+        justify-content: center;
+    }
 
 }
 
@@ -338,5 +355,14 @@ main {
         padding: 10px 0px;
         justify-content: center;
         align-items: center;
+    }
+
+
+    .collection-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .see-more {
+        justify-content: center;
     }
 }
