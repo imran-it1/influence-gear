@@ -21,11 +21,9 @@ body {
 :root {
 
     /* Color */
-    --primary-color: #E02C6D;
+    --btn-primary-color: #E02C6D;
     --secondary-color: #0A0826;
     --accent-color: #FB8200;
-
-
 
     /* Font size */
 
@@ -41,8 +39,6 @@ body {
     --fw-large: 600;
     --fw-medium: 500;
     --fw-small: 400;
-
-
-
-
 }
+
+/* Shared Style */
