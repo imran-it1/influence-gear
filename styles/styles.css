@@ -55,6 +55,18 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    transition: 0.5s;
+}
+
+.btn-primary:hover {
+    background: rgb(118, 252, 118);
+    color: #18191F;
+    cursor: pointer;
+    outline: 1px solid #E02C6D;
+}
+
+.fa-solid:hover {
+    color: #18191F;
 }
 
 
@@ -103,6 +115,35 @@ header {
     font-size: var(--fs-small);
     font-weight: var(--fw-large);
 }
+
+nav>a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #E02C6D;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav>a:hover::after {
+    width: 100%;
+}
+
+.nav-links a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #E02C6D;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
 
 
 /* Banner Style */
@@ -161,6 +202,12 @@ main {
     padding: 35px 50px;
 }
 
+.sponsor-logo-container img:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 /* Collection style */
 
 .collection {
@@ -190,6 +237,11 @@ main {
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.collection-card:hover {
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.5);
 }
 
 .collection-card img {
@@ -245,6 +297,11 @@ main {
     margin-top: 50px;
 }
 
+.see-more:hover {
+    cursor: pointer;
+    color: #e71562;
+}
+
 /* Product section style */
 
 .products {
@@ -287,6 +344,16 @@ main {
     align-items: center;
 }
 
+.btn-product:hover {
+    background: rgb(118, 252, 118);
+    color: #18191F;
+    cursor: pointer;
+    outline: 1px solid #E02C6D;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Footer Style */
 
 .footer {
     background: #0A0826;
@@ -314,12 +381,40 @@ main {
     font-weight: var(--fw-Xlarge);
 }
 
+.footer-title::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #E02C6D;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.footer-title:hover::after {
+    width: 100%;
+}
+
+.footer-title:hover {
+    cursor: pointer;
+}
+
 .footer-description {
     color: #D9DBE1;
     font-size: var(--fs-Xsmall);
     font-weight: var(--fw-Xlarge);
 }
 
+.social {
+    display: flex;
+    gap: 16px;
+}
+
+.social img:hover {
+    cursor: pointer;
+    background: #E02C6D;
+    border-radius: 50%;
+}
 
 /* Media Quary */
 
@@ -408,19 +503,6 @@ main {
         margin-bottom: 100px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
